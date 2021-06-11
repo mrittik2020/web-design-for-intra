@@ -1,0 +1,162 @@
+/* color scheams */
+:root {
+  --col1: #000000;
+  --col2: #ff0000;
+  --col3: #181818;
+  --col4: rgba(88, 88, 88, 0.5);
+  --col5: rgba(100, 17, 17, 0.62);
+  --col6: #d8d8d8;
+}
+*{
+  padding:0px;
+  margin: 0px;
+}
+body{
+  background:linear-gradient(140deg,var(--col1),var(--col2));
+  width:100vw;
+  height:100vh; 
+}
+header{
+  margin:0px 10px;
+  width:95%;
+  height: 70px;
+  margin: auto;
+  text-align:center;
+  background: rgba(17, 16, 16, 0.192);
+
+}
+header:hover{
+  box-shadow: 10px 10px 10px  var(--col5);
+
+}
+.logo{
+  width:50px;
+  margin-top: 5px;
+}
+.header-container{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  align-items:center;
+  
+}
+.htext{
+  /* background-color: #2512128f;
+  box-shadow: 2px 2px 2px  rgb(20, 19, 19);
+  transform: scale(1.5);
+  font-style: italic; */
+  color:var(--col6);
+  font-size:28px;
+}
+
+.container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+.text{
+  margin: 40px 0 100px 0px;
+  
+}
+.text ul{
+  list-style: none;
+  display:flex;
+  color:rgb(255, 27, 27);
+}
+.text ul li{
+  font-size:35px;
+  margin:0 1.8px;
+}
+.text ul li:nth-child(1),
+.text ul li:nth-child(10){
+  margin: 0 10px;
+}
+.text ul li:nth-child(3),
+.text ul li:nth-child(4),
+.text ul li:nth-child(9){
+  color:var(--col6);
+}
+
+.info{
+display:flex;
+flex-direction:row;
+/* align-items:center; */
+justify-content:space-evenly;
+color: var(--col6);
+margin-bottom: 40px;
+}
+.s{
+  margin: 0 50px 0 50px;
+}
+.info .s h2{
+text-align: center;
+letter-spacing:3px;
+text-transform: uppercase;
+margin-bottom: 20px;
+} 
+
+.info .s p{
+  font-size:20px;
+  line-height: 33px;
+}
+
+.cart{
+  display:flex;
+  margin: 0 20px;
+}
+.sub-cart{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  align-items:center;
+}
+
+.img-cart{
+  width:300px;
+  height: 200px;
+  /* filter: blur(3px);
+  -webkit-filter: blur(3px); */
+}
+.item-text{
+  height:80px;
+  position:relative;
+  background-color:aqua;
+  width:200px;
+  z-index: 2;
+  transform:translateY(-35px);
+}
+.item-text:hover{
+  transform:translateY(-70px);
+  transition: .5s;
+  box-shadow: 5px 5px 5px rgb(45, 146, 146) ;
+}
+.cp{
+  font-size:18px;
+}
+
+.citem{
+  margin: 0 20px;
+}
+
+footer{
+  position:fixed;
+  bottom:0;
+  width:95%;
+  height: 60px;
+  background-color:var(--col5);
+  margin-left: 50px;
+}
+
+.footer{
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
+.footer p{
+  font-size:22px;
+  margin-top:15px;
+} 
+
